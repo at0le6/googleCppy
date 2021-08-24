@@ -12,6 +12,7 @@ body
   flex-direction: column;
   height: 100%;
 }
+/*header stuff*/
 .header
 {
   display: flex;
@@ -27,7 +28,6 @@ body
   display: flex;
   justify-content: flex-end;
   height: 48px;
-  float: right;
   align-items: inherit;
 }
 .container-item {
@@ -37,8 +37,31 @@ body
 {
   padding-left: .8rem
 }
-a
+.header a
 {
   text-decoration: none;
-  border: none;
+  border:  1px solid transparent;
+  display: flex;
+  color: black;
+}
+
+.menu-icon
+{
+  margin: 4px 4px 4px 8px;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inherit;
+  fill: #5f6368;
+}
+.Menu-apps:hover::after
+{
+  content: "";
+  position: fixed;
+  top: 11px;
+  margin-left: 1px;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  background-color: rgba(60,64,67,0.08);
+  animation: all .5s ease;
 }
