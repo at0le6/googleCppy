@@ -95,20 +95,17 @@ main
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  padding-bottom: 4rem;
+  justify-content: flex-start;
 }
 .containerGrid
 {
   display: grid;
-  grid-template-rows: [first] 1fr [second] 1fr [thrid] 1fr;
+  grid-template-rows: [first] 14rem [second] 1fr [thrid] min-content [forth] min-content;
   place-items: center;
   justify-content: space-between;
+  row-gap: 1rem;
 }
-.margin
-{
-  margin-top: 4rem;
-}
+
 .containerFlexbox
 {
   display: flex;
@@ -124,7 +121,7 @@ main
   height: 2.75rem;
   box-shadow: none;
   width: 39rem;
-  padding: 6px 15px;
+  padding: 6px 15px 5px;
 }
 .searchIcon
 {
@@ -149,7 +146,47 @@ main input
   font-size: 16px;
   outline: none;
 }
-
+.centerIcon
+{
+  align-self: flex-end;
+}
+.microIcon
+{
+  width: 24px;
+  height: 24px;
+}
+.buttons
+{
+  display: flex;
+  flex-flow: row nowrap;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-white
+{
+  background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.lastText
+{
+  color: #3c4043;
+display: inline-block;
+line-height: 28px;
+font-size: small;
+}
 /*footer stuff*/
 footer
 {
