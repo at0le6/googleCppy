@@ -100,7 +100,7 @@ main
 .containerGrid
 {
   display: grid;
-  grid-template-rows: [first] 14rem [second] 1fr [thrid] min-content [forth] min-content;
+  grid-template-rows: [first] 6.5fr [second] 1fr [thrid] min-content [forth] min-content;
   place-items: center;
   justify-content: space-between;
   row-gap: 1rem;
@@ -154,6 +154,11 @@ main input
 {
   width: 24px;
   height: 24px;
+}
+.microSpace
+{
+  height: 6rem;
+  width: 1rem;
 }
 .buttons
 {
