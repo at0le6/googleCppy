@@ -1,20 +1,21 @@
-*
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
-body
-{
+
+body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
+.all{
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+
 /*header stuff*/
-.header
-{
+.header {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -23,49 +24,47 @@ body
   flex-basis: 10vh;
 }
 
-.container
-{
+.container {
   display: flex;
   justify-content: flex-end;
   height: 48px;
   align-items: inherit;
 }
+
 .container-item {
-    display: inline-block;
+  display: inline-block;
 }
-.container-item:not(:last-child)
-{
+
+.container-item:not(:last-child) {
   padding-left: .8rem
 }
-.header a
-{
+
+.header a {
   text-decoration: none;
-  border:  1px solid transparent;
+  border: 1px solid transparent;
   display: flex;
   color: black;
 }
 
-.menu-icon
-{
+.menu-icon {
   margin: 4px 4px 4px 8px;
   width: 1.5rem;
   height: 1.5rem;
   display: inherit;
   fill: #5f6368;
 }
-.Menu-apps:hover::after
+.Menu-apps
 {
-  content: "";
-  position: fixed;
-  top: 10px;
-  margin-left: 1px;
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 50%;
-  background-color: rgba(60,64,67,0.08);
+  padding-right: 3px;
 }
-header .btn-menu
-{
+
+.Menu-apps:hover {
+  padding-right: 3px;
+  border-radius: 50%;
+  background-color: rgba(60, 64, 67, 0.08);
+}
+
+header .btn-menu {
   background-color: #1a73e8;
   border: 1px solid transparent;
   padding: 0.56rem 1.43rem;
@@ -77,28 +76,28 @@ header .btn-menu
   line-height: 16px;
   color: #fff;
 }
-header .btn-menu:hover
-{
+
+header .btn-menu:hover {
   background-color: #2b7de9;
 }
-.cmon-flexcolumn
-{
-      flex-shrink: 0;
+
+.cmon-flexcolumn {
+  flex-shrink: 0;
 }
+
 /*Main stuff*/
-main
-{
+main {
   flex-basis: 80vh;
 }
-.logo
-{
+
+.logo {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
 }
-.containerGrid
-{
+
+.containerGrid {
   display: grid;
   grid-template-rows: [first] 6.5fr [second] 1fr [thrid] min-content [forth] min-content;
   place-items: center;
@@ -106,15 +105,14 @@ main
   row-gap: 1rem;
 }
 
-.containerFlexbox
-{
+.containerFlexbox {
   display: flex;
   justify-content: space-between;
   flex: 1;
   align-items: center;
 }
-.boxInput
-{
+
+.boxInput {
   background-color: #fff;
   border: 1px solid #dfe1e5;
   border-radius: 2rem;
@@ -123,20 +121,20 @@ main
   width: 39rem;
   padding: 6px 15px 5px;
 }
-.searchIcon
-{
+
+.searchIcon {
   color: #9aa0a6;
 }
-.sizeS
-{
+
+.sizeS {
   font-size: 18;
 }
-.input
-{
+
+.input {
   flex: 100%
 }
-main input
-{
+
+main input {
   width: 100%;
   height: 70%;
   border: none;
@@ -146,55 +144,83 @@ main input
   font-size: 16px;
   outline: none;
 }
-.centerIcon
-{
+
+.centerIcon {
   align-self: flex-end;
 }
-.microIcon
-{
+
+.microIcon {
   width: 24px;
   height: 24px;
 }
-.microSpace
-{
+
+.microSpace {
   height: 6rem;
   width: 1rem;
 }
-.buttons
-{
+
+.buttons {
   display: flex;
   flex-flow: row nowrap;
-    width: 60%;
-    justify-content: space-around;
-    align-items: center;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
 }
-.btn-white
-{
+
+.btn-white {
   background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
-    border-radius: 4px;
-    color: #3c4043;
-    font-family: arial,sans-serif;
-    font-size: 14px;
-    margin: 11px 4px;
-    padding: 0 16px;
-    line-height: 27px;
-    height: 36px;
-    min-width: 54px;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
-}
-.lastText
-{
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
   color: #3c4043;
-display: inline-block;
-line-height: 28px;
-font-size: small;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
 }
+
+.lastText {
+  color: #3c4043;
+  display: inline-block;
+  line-height: 28px;
+  font-size: small;
+}
+
 /*footer stuff*/
-footer
-{
+footer {
   flex-basis: 10vh;
   background-color: #f2f2f2;
+}
+
+.footerOne {
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  color: rgba(0, 0, 0, .54);
+}
+
+.footerTwo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerOneChild {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content {
+  display: block;
+  padding: 15px;
+  white-space: nowrap;
+  text-decoration: none;
+  border: none;
+  color: rgba(0, 0, 0, .54)
 }
