@@ -9,7 +9,6 @@ body {
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
-  position: fixed;
 }
 
 /*header stuff*/
@@ -86,6 +85,7 @@ header .btn-menu:hover {
 /*Main stuff*/
 main {
   flex-basis: 80vh;
+  overflow: auto;
 }
 
 .logo {
